@@ -9,14 +9,6 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""></script>
-    <style>
-      html {
-        color: blue;
-      }
-      p {
-        text-color: rgba (97, 255, 110, 1);
-      }
-    </style>
   </head>
   <body>
     <h1>This is the h1</h1>
@@ -27,6 +19,10 @@
       Sed bibendum semper nunc. Proin ac bibendum ipsum, in tempor tortor. Aenean id porttitor justo. Proin cursus lectus ut quam lobortis, a lobortis metus accumsan. Maecenas vestibulum, tellus id pharetra venenatis, erat elit vehicula leo, sed tempus nisl purus in tellus. Nunc pharetra ullamcorper mattis. Mauris at gravida neque. Etiam at laoreet nibh, in lobortis quam. Sed tincidunt sagittis diam, nec semper dui fringilla quis. Quisque vulputate molestie aliquet. Nunc fringilla, tortor vitae feugiat congue, nulla quam luctus metus, nec commodo ligula erat ut leo. Maecenas at quam eu neque sollicitudin venenatis a non nibh. Mauris nec lacinia magna, et tincidunt dolor.
     </p>
     <div id="mapid"></div>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
     var mymap = L.map('mapid').setView([51.505, -0.09], 13);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
